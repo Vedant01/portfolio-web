@@ -1,11 +1,5 @@
-// Update font imports to use public paths
+// Font imports removed in favor of system fonts
 const fonts = {
-  GothamBoldItalic: '/assets/fonts/gotham-bold-italic.woff2',
-  GothamBold: '/assets/fonts/gotham-bold.woff2',
-  GothamBookItalic: '/assets/fonts/gotham-book-italic.woff2',
-  GothamBook: '/assets/fonts/gotham-book.woff2',
-  GothamMediumItalic: '/assets/fonts/gotham-medium-italic.woff2',
-  GothamMedium: '/assets/fonts/gotham-medium.woff2',
   IPAGothic: '/assets/fonts/ipa-gothic.woff2'
 };
 
@@ -124,46 +118,12 @@ const tokenStyles = squish(`
 `);
 
 const createFontStyles = fonts => `
+  /* Custom font declarations removed in favor of system fonts */
   @font-face {
-    font-family: 'GothamBook';
-    src: url('/assets/fonts/gotham-book.woff2') format('woff2');
+    font-family: 'IPA Gothic';
+    src: url('/assets/fonts/ipa-gothic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamBook';
-    src: url('/assets/fonts/gotham-book-italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamMedium';
-    src: url('/assets/fonts/gotham-medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamMedium';
-    src: url('/assets/fonts/gotham-medium-italic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamBold';
-    src: url('/assets/fonts/gotham-bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamBold';
-    src: url('/assets/fonts/gotham-bold-italic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
     font-display: swap;
   }
   @font-face {
