@@ -196,7 +196,7 @@
   }
 
   .lang {
-    font-family: var(--monoFontStack);
+    font-family: var(--monoFontFamily);
     position: absolute;
     top: 0;
     left: var(--padding);

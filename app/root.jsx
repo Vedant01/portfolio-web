@@ -21,10 +21,29 @@ import styles from './root.module.css';
 import './reset.module.css';
 import './global.module.css';
 
-// Font preloading removed in favor of system fonts
-const fonts = {};
+// Update font paths to use public directory
+const fonts = {
+  GothamBook: '/assets/fonts/gotham-book.woff2',
+  GothamMedium: '/assets/fonts/gotham-medium.woff2',
+};
 
 export const links = () => [
+  {
+    rel: 'preload',
+    href: fonts.GothamMedium,
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+    importance: 'high',
+  },
+  {
+    rel: 'preload',
+    href: fonts.GothamBook,
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+    importance: 'high',
+  },
   { rel: 'manifest', href: '/manifest.json' },
   { rel: 'icon', href: '/favicon.ico' },
   { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
