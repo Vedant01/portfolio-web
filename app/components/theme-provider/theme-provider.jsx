@@ -124,43 +124,49 @@ const tokenStyles = squish(`
 
 const createFontStyles = fonts => `
   @font-face {
-    font-family: 'GothamBook';
-    src: url('${fonts.GothamBook}') format('opentype');
+    font-family: 'Gotham';
+    src: local('Arial'), local('Helvetica'),
+         url('${fonts.GothamBook}') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'GothamBook';
-    src: url('${fonts.GothamBookItalic}') format('opentype');
+    font-family: 'Gotham';
+    src: local('Arial Italic'), local('Helvetica Oblique'),
+         url('${fonts.GothamBookItalic}') format('opentype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
-    font-family: 'GothamMedium';
-    src: url('${fonts.GothamMedium}') format('opentype');
+    font-family: 'Gotham';
+    src: local('Arial Bold'), local('Helvetica Bold'),
+         url('${fonts.GothamMedium}') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'GothamMedium';
-    src: url('${fonts.GothamMediumItalic}') format('opentype');
+    font-family: 'Gotham';
+    src: local('Arial Bold Italic'), local('Helvetica Bold Oblique'),
+         url('${fonts.GothamMediumItalic}') format('opentype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
-    font-family: 'GothamBold';
-    src: url('${fonts.GothamBold}') format('truetype');
+    font-family: 'Gotham';
+    src: local('Arial Black'), local('Helvetica Black'),
+         url('${fonts.GothamBold}') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'GothamBlackItalic';
-    src: url('${fonts.GothamBlackItalic}') format('truetype');
+    font-family: 'Gotham';
+    src: local('Arial Black Italic'), local('Helvetica Black Oblique'),
+         url('${fonts.GothamBlackItalic}') format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: swap;

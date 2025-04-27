@@ -142,7 +142,7 @@ export const Navbar = () => {
   return (
     <header className={styles.navbar} ref={headerRef}>
       <RouterLink
-        unstable_viewTransition
+        unstable_viewtransition
         prefetch="intent"
         to={location.pathname === '/' ? '/#intro' : '/'}
         data-navbar-item
