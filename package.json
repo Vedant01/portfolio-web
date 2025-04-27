@@ -10,6 +10,7 @@
     "build": "remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "remix-serve build",
+    "preview": "vite preview",
     "postinstall": "node ./scripts/draco.cjs",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build"

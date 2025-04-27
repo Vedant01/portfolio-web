@@ -30,6 +30,14 @@ module.exports = {
     '**/*.woff2': {
       'Cache-Control': 'public, max-age=31536000, immutable',
       'Access-Control-Allow-Origin': '*'
+    },
+    '**/*.otf': {
+      'Cache-Control': 'public, max-age=31536000, immutable',
+      'Access-Control-Allow-Origin': '*'
+    },
+    '**/*.ttf': {
+      'Cache-Control': 'public, max-age=31536000, immutable',
+      'Access-Control-Allow-Origin': '*'
     }
   }
 };

@@ -1,12 +1,9 @@
 // Update font imports to use public paths
 const fonts = {
-  GothamBoldItalic: '/assets/fonts/gotham-bold-italic.woff2',
-  GothamBold: '/assets/fonts/gotham-bold.woff2',
-  GothamBookItalic: '/assets/fonts/gotham-book-italic.woff2',
-  GothamBook: '/assets/fonts/gotham-book.woff2',
-  GothamMediumItalic: '/assets/fonts/gotham-medium-italic.woff2',
-  GothamMedium: '/assets/fonts/gotham-medium.woff2',
-  IPAGothic: '/assets/fonts/ipa-gothic.woff2'
+  GothamMedium: '/assets/fonts/Gotham-Medium.otf',
+  GothamMediumItalic: '/assets/fonts/Gotham-MediumItalic.otf',
+  GothamBook: '/assets/fonts/Gotham-Book.otf',
+  GothamBookItalic: '/assets/fonts/Gotham Book Italic.otf'
 };
 
 // Reminder: Always use root-relative paths (e.g. /assets/...) for static assets in code and CSS.
@@ -126,54 +123,32 @@ const tokenStyles = squish(`
 const createFontStyles = fonts => `
   @font-face {
     font-family: 'GothamBook';
-    src: url('/assets/fonts/gotham-book.woff2') format('woff2');
+    src: url('${fonts.GothamBook}') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'GothamBook';
-    src: url('/assets/fonts/gotham-book-italic.woff2') format('woff2');
+    src: url('${fonts.GothamBookItalic}') format('opentype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: 'GothamMedium';
-    src: url('/assets/fonts/gotham-medium.woff2') format('woff2');
+    src: url('${fonts.GothamMedium}') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'GothamMedium';
-    src: url('/assets/fonts/gotham-medium-italic.woff2') format('woff2');
+    src: url('${fonts.GothamMediumItalic}') format('opentype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamBold';
-    src: url('/assets/fonts/gotham-bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'GothamBold';
-    src: url('/assets/fonts/gotham-bold-italic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'IPA Gothic';
-    src: url('/assets/fonts/ipa-gothic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-`;
+  }`;
 
 export const fontStyles = createFontStyles(fonts);
 

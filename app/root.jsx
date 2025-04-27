@@ -23,8 +23,8 @@ import './global.module.css';
 
 // Update font paths to use public directory
 const fonts = {
-  GothamBook: '/assets/fonts/gotham-book.woff2',
-  GothamMedium: '/assets/fonts/gotham-medium.woff2',
+  GothamBook: '/assets/fonts/Gotham-Book.otf',
+  GothamMedium: '/assets/fonts/Gotham-Medium.otf',
 };
 
 export const links = () => [
@@ -32,7 +32,7 @@ export const links = () => [
     rel: 'preload',
     href: fonts.GothamMedium,
     as: 'font',
-    type: 'font/woff2',
+    type: 'font/otf',
     crossOrigin: 'anonymous',
     importance: 'high',
   },
@@ -40,7 +40,7 @@ export const links = () => [
     rel: 'preload',
     href: fonts.GothamBook,
     as: 'font',
-    type: 'font/woff2',
+    type: 'font/otf',
     crossOrigin: 'anonymous',
     importance: 'high',
   },
