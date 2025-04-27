@@ -3,7 +3,9 @@ const fonts = {
   GothamMedium: '/assets/fonts/Gotham-Medium.otf',
   GothamMediumItalic: '/assets/fonts/Gotham-MediumItalic.otf',
   GothamBook: '/assets/fonts/Gotham-Book.otf',
-  GothamBookItalic: '/assets/fonts/Gotham Book Italic.otf'
+  GothamBookItalic: '/assets/fonts/Gotham Book Italic.otf',
+  GothamBold: '/assets/fonts/GOTHAM-BOLD.TTF',
+  GothamBlackItalic: '/assets/fonts/GOTHAM-BLACKITALIC.TTF'
 };
 
 // Reminder: Always use root-relative paths (e.g. /assets/...) for static assets in code and CSS.
@@ -146,6 +148,20 @@ const createFontStyles = fonts => `
     font-family: 'GothamMedium';
     src: url('${fonts.GothamMediumItalic}') format('opentype');
     font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamBold';
+    src: url('${fonts.GothamBold}') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamBlackItalic';
+    src: url('${fonts.GothamBlackItalic}') format('truetype');
+    font-weight: 900;
     font-style: italic;
     font-display: swap;
   }`;
