@@ -12,6 +12,7 @@
 @layer base {
   :global(:root) {
     --mobileNavOffset: calc(var(--spaceOuter) * 2 + var(--space2XL));
+    --fontStack: Arial, Helvetica, sans-serif;
   }
 
   :global(html, body) {
